@@ -1,9 +1,25 @@
-CREATE TABLE series (id, title, author_id, subgenre_id)
+CREATE TABLE series (
+  id INTEGER PRIMARY KEY, 
+  title TEXT,
+  author_id INTEGER,
+  subgenre_id INTEGER
+  );
 
-CREATE TABLE subgenres (id, name)
+CREATE TABLE subgenres (
+  id INTEGER PRIMARY KEY,
+  name TEXT
+  );
 
-CREATE TABLE authors (id, name)
+CREATE TABLE authors (
+  id INTEGER PRIMARY KEY,
+  name TEXT
+  );
 
-CREATE TABLE books (id, title, year, series_id)
+CREATE TABLE books (
+  id INTEGER PRIMARY KEY,
+  title TEXT,
+  year INTEGER,
+  series_id TEXT
+  );
 
-CREATE TABLE 
+CREATE TABLE characters (id, name, motto, species, author_id, series_id)
