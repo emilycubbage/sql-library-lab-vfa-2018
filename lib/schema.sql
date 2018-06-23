@@ -4,4 +4,6 @@ CREATE TABLE subgenres (id, name)
 
 CREATE TABLE authors (id, name)
 
-CREATE TABLE
+CREATE TABLE books (id, title, year, series_id)
+
+CREATE TABLE 
